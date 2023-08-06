@@ -2,6 +2,11 @@ html {
     font-size: 10px; /* px means "pixels": the base font size is now 10 pixels high */
     font-family: "Open Sans", sans-serif; /* this should be the rest of the output you got from Google Fonts */
     background-color: white;
+    scroll-behavior: smooth;
+    hyphens: auto;
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
   }
 
 nav {
@@ -51,6 +56,14 @@ header.about {
 
 header.exp {
   background: url(../images/swing.jpg);
+  background-position: left 50% top 45px;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+header.projects {
+  background: url(../images/trees.jpg);
   background-position: left 50% top 45px;
   background-size: auto;
   background-repeat: no-repeat;
@@ -115,6 +128,8 @@ article {
   padding: 30px;
   border-radius: 5px;
   position: relative;
+  text-align: justify;
+  word-spacing:-2px;
 }
 
 article.index {
@@ -151,7 +166,8 @@ img {
 }
 
 img.profile {
-  max-height: 400px;
+  margin-left: 25px;
+  max-height: 350px;
   border-radius: 5px;
   overflow: hidden;
 }
@@ -250,9 +266,8 @@ section {
 .media .text {
   border: 0rem solid;
   border-radius: 5px;
-  background-color: #dcf0fb;
   grid-area: content;
-  padding:20px 25px 10px 25px;
+  padding: 15px 25px 0px 25px;
 }
 
 .media h3 {
@@ -263,9 +278,12 @@ section {
 
 .media p {
   margin-top: 5px;
+  margin-bottom: 0;
   font-size: 14px;
   line-height: 1.5;
   letter-spacing: 1px;
+  text-align: justify;
+  word-spacing:-2px;
 }
 
 .media.flipped {
@@ -276,6 +294,85 @@ section {
 .media.flipped img {
   float: right;
 }
+
+
+.media button {
+  margin: 10px 0px 15px 0px;
+  float: right;
+  font-size: 16px;
+  padding: 9px 17px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+#one {
+  background-color: #ffd1bf;
+}
+
+#one:hover {
+  background-color: #f8b9a0;
+}
+
+#two {
+  background-color: #fbdab5;
+}
+
+#two:hover {
+  background-color: #ffd19c;
+}
+
+#three {
+  background-color: #c0d9e7;
+}
+
+#three:hover {
+  background-color: #acccde;
+}
+
+
+/* Cards for Projects page */
+
+.card-container {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-gap: 30px;
+  max-width: 1200px;
+}
+
+.cards {
+  grid-template-rows: fit-content 200px 1fr;
+  border: solid 1px rgb(211, 211, 211);
+  border-radius: 10px;
+}
+
+.cards img {
+  overflow: hidden;
+  border-radius: 10px 10px 0px 0px;
+  object-fit: cover;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+
+.cards h3 {
+  font-size: 25px;
+  margin: 1px 0px 10px 0px;
+  padding: 0;
+}
+
+.cards p {
+  margin: 5px 20px 20px 20px;
+  line-height: 1.4;
+  font-size: 14px;
+}
+
+
+
 
 
 @media only screen and (max-width: 1000px) {
@@ -341,7 +438,7 @@ section {
   }
   
   nav {
-    padding: 5px 5px;
+    padding: 5px 0px 5px 15px;
   }
 
   .timeline-item::before {
@@ -397,6 +494,10 @@ section {
 
   hr {
     margin-bottom: 30px;
+  }
+
+  img.profile {
+    margin: 0px;
   }
 
 }

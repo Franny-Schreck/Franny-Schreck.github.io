@@ -1,11 +1,11 @@
 <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
-  <circle cx="40" cy="40" r="20" stroke="black" stroke-width="7" fill="none"/>
-  <circle cx="160" cy="40" r="20" stroke="black" stroke-width="7" fill="none"/>
-  <circle cx="100" cy="40" r="20" stroke="black" stroke-width="7" fill="none"/>
-  <circle cx="40" cy="100" r="20" stroke="black" stroke-width="7" fill="none"/>
-  <circle cx="160" cy="100" r="20" stroke="black" stroke-width="7" fill="none"/>
-  <circle cx="100" cy="100" r="20" stroke="black" stroke-width="7" fill="none"/>
-  <circle cx="40" cy="160" r="20" stroke="black" stroke-width="7" fill="none"/>
-  <circle cx="160" cy="160" r="20" stroke="black" stroke-width="7" fill="none"/>
-  <circle cx="100" cy="160" r="20" stroke="black" stroke-width="7" fill="none"/>
+  <circle cx="40" cy="40" r="20" stroke="#43a448" stroke-width="16" fill="#43a448"/>
+  <circle cx="160" cy="40" r="20" stroke="black" stroke-width="8" fill="none"/>
+  <circle cx="100" cy="40" r="20" stroke="black" stroke-width="8" fill="none"/>
+  <circle cx="40" cy="100" r="20" stroke="black" stroke-width="8" fill="none"/>
+  <circle cx="160" cy="100" r="20" stroke="#ff7d13" stroke-width="16" fill="#ff7d13"/>
+  <circle cx="100" cy="100" r="20" stroke="black" stroke-width="8" fill="none"/>
+  <circle cx="40" cy="160" r="20" stroke="black" stroke-width="8" fill="none"/>
+  <circle cx="160" cy="160" r="20" stroke="black" stroke-width="8" fill="none"/>
+  <circle cx="100" cy="160" r="20" stroke="#a94dfe" stroke-width="16" fill="#a94dfe"/>
 </svg>

@@ -8,14 +8,38 @@
     <meta name="author" content="Fanny Schreck"/>
     <meta name="description" content="This is my personal webpage, where I introduce myself and what I love to do!"/>
 
-    <link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
+    
+    <script type="module" src="scripts/main.js" defer></script>
+
+    <script type="module" src="./Hyphenopoly_Loader.js"></script>
+
     
     <link href="styles/style.css" rel="stylesheet" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
 
-    <script src="scripts/main.js" defer></script>
+    <link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
 
+    <link rel="apple-touch-icon" sizes="57x57" href="images/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="images/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="images/favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+
+  
     <title>Fanny Schreck</title>
 
   </head>
@@ -38,13 +62,13 @@
     <main>
 
 
-    <article class="index" data-aos="fade-up">
+    <article class="index hyphenate" data-aos="fade-up">
         <img class="profile" src="images/jump.jpeg" alt="My IB talk"/>
         <h2 class="card">Introduction</h2>
         <section class="card">
-        <p  data-aos="fade-up"> My name is Fanny Schreck and I am currently pursuing a bachelor's degree in history at the University of Vienna. Since this is only one of my interests, I am currently also dabbling in a few other areas, such as computer science (web design, typesetting systems and data compression) and learning / teaching practice research.<br>
+        <p  data-aos="fade-up"> My name is Fanny Schreck and I am currently pursuing a bachelor's degree in environmental engineering at the Vienna University of Technology and my master's in history at the University of Vienna. Since this is only one of my interests, I am currently also dabbling in a few other areas, such as computer science (web design, typesetting systems and data compression) and learning / teaching practice research.<br>
 
-        But I also enjoy furthering my knowledge through conversation and discussion, one of my reasons for launching a debate club in my school and now enrolling in my university's international legal study programme. I have found that regularly reading challenging texts and writing papers on topics of interest to me to be an involving way to dive deeper into them and consolidate my understanding. I don't think there is a lot to be gained by dwelling only on theory if you never put it into practice. I probably owe my personal approach to learning to my weakness for books - even today you hardly see me without one and I still often like to devour one in a single afternoon..</p>
+        But I also enjoy furthering my knowledge through conversation and discussion, one of my reasons for launching a debate club in my school and now enrolling in my university's international legal study programme. I have found that regularly reading challenging texts and writing papers on topics of interest to me to be an involving way to dive deeper into them and consolidate my understanding. I don't think there is a lot to be gained by dwelling only on theory if you never put it into practice. I probably owe my personal approach to learning to my weakness for books - even today you hardly see me without one and I still often like to devour one in a single afternoon...</p>
       </section>
     </article>
 
@@ -52,17 +76,19 @@
     
     <div class="media" data-aos="fade-up">
       <div class="image"><img src="images/written.jpg"></div>
-      <div class="text" style="background-color: rgb(243, 243, 243);">
+      <div class="text" style="background-color: #fff2ed;">
         <h3>Written</h3>
-        <p>During my pursuit of the history bachelor's degree I have had the opportunity to create many works concerning a multitude of different topics, themes and historical periods. Some papers I have written out of the simple want to gain a deeper theoretical understanding or just trying out some new methods. Global history (researching the interconnectedness and developments that have created what we now think of as inevitable present) and contemporary history (relatively recent events and their place / role in the collective memory of nations) I think are absolutely fascinating areas of research.</p>
+        <p>During my pursuit of the history bachelor's degree I have had the opportunity to create many works concerning a multitude of different topics, themes and historical periods. Some papers I have written out of the simple want to gain a deeper theoretical understanding or just trying out some new methods. Global history </p>
+        <a href="projects.html"><button id="one">Read more</button></a>
       </div>
     </div>
 
     <div class="media flipped" data-aos="fade-up">
       <div class="image"><img src="images/speaking.jpg"></div>
-      <div class="text" style="background-color: rgb(251, 243, 218);">
+      <div class="text" style="background-color: #fbf3da;">
         <h3>Speaking &amp; Roles </h3>
         <p>Having completed the International Baccalaureate (IB) with exceptionally high points, I was invited to local IB schools and preparatory tutoring institutions to give talks about my personal experience and share study-tips. Because these organisations are highly internationally oriented, my periodic talks and the subsequent discussions enabled me to </p>
+        <a href="experience.html"><button id="two">Read more</button></a>
       </div>
     </div>
 
@@ -70,7 +96,8 @@
       <div class="image"><img src="images/board.jpg"></div>
       <div class="text" style="background-color: #dcf0fb;">
         <h3>Tutoring</h3>
-        <p>Giving talks in various IB-institutions enabled me to connect to many teachers and students. If needed, I would then give tutoring lessons in those subject that I graduated in - although mathematics, german and history were the most requested. After being exposed to many different students, I could experiment first-hand with teaching strategies and forms of explanation. This prompted to do more research into those aspects of education science that I thought to be valuable in teaching strategies of understanding texts and bigger conceptual ideas. </p>
+        <p>Giving talks in various IB-institutions enabled me to connect to many teachers and students. If needed, I would then give tutoring lessons in those subject that I graduated in - although mathematics, german and history were the most requested. After being exposed to many different students, I could experiment first-hand with teaching strategies and forms of explanation. This prompted to do more research into thoses. </p>
+        <a href="experience.html"><button id="three">Read more</button></a>
       </div>
     </div>
       
@@ -93,7 +120,7 @@
       <a href="https://studyacademyvienna.com/" title="Go to their Homepage" target="_blank">This</a> is the place of the talk
     </p>
 
-    <p>Don't be shy, contact me at <a href="mailto:fanny.schreck@protonmail.com">fanny.schreck@protonmail.com</a>!</p>
+    <p>Don't be shy, contact me at <a href="mailto:fy.schreck@">fanail.com</a>!</p>
 
   <button>Change user</button>
 
