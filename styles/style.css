@@ -10,12 +10,14 @@ html {
   }
 
 nav {
+  max-width: 1200px;
+  margin: 0 auto;
   background-color: white;
-  padding: .5em;
   top: 0;
+  padding: .5em;
   position: sticky;
   padding: 10px 20px 10px 35px;
-  z-index: 20;
+  z-index: 30;
 }
 
 nav ul {
@@ -23,13 +25,12 @@ nav ul {
   padding: 0;
   list-style: none;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 nav a {
   color: black;
   text-decoration: none;
-  padding: .5em 1em;
 }
 
 header {
@@ -38,6 +39,7 @@ header {
   margin: 0px;
   padding: 0px;
   background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
 header.home {
@@ -49,7 +51,8 @@ header.home {
 
 header.about {
   background: url(../images/headers/big_talk.jpg);
-  background-position: top;
+  padding-top: 30px;
+  background-position: top 30px left 50%;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
@@ -106,9 +109,16 @@ br {
 }
 
 body {
-  max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
   background-color: white;
+}
+
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+  background-color: white;
+  max-width: 1200px;
 }
 
 main {
@@ -166,7 +176,8 @@ img {
 }
 
 img.profile {
-  margin-left: 25px;
+  margin-left: 5px;
+  padding-right: 5px;
   max-height: 350px;
   border-radius: 5px;
   overflow: hidden;
@@ -176,7 +187,9 @@ section {
   display: flex;
 }
 
+
 /* Timeline CSS */
+
 .container {
   max-width: 1024px;
   width: 80%;
@@ -204,6 +217,7 @@ section {
   color: black;
   line-height: 1.5;
 }
+
 .timeline-item::before {
   white-space: pre-wrap;
   content: attr(date-is);
@@ -216,6 +230,7 @@ section {
   font-weight: 700;
   font-size: 14px;
 }
+
 .timeline-item::after {
   width: 10px;
   height: 10px;
@@ -229,6 +244,7 @@ section {
   border: 2px solid #3e4570;
   background: white;
 }
+
 .timeline-item:last-child {
   -o-border-image: linear-gradient(to bottom, #3e4570 60%, rgba(0, 0, 0, 0)) 1 100%;
      border-image: linear-gradient(to bottom, #3e4570 60%, rgba(0, 0, 0, 0)) 1 100%;
@@ -335,7 +351,7 @@ section {
 /* Cards for Projects page */
 
 .card-container {
-  margin: 0;
+  margin: 0 ;
   padding: 0;
   box-sizing: border-box;
   display: grid;
@@ -345,7 +361,6 @@ section {
 }
 
 .cards {
-  grid-template-rows: fit-content 200px 1fr;
   border: solid 1px rgb(211, 211, 211);
   border-radius: 10px;
 }
@@ -371,6 +386,36 @@ section {
   font-size: 14px;
 }
 
+/* Footer styling */
+
+footer {
+  max-width: 100%;
+  background: #edededab;
+}
+
+.footer-wrapper {
+  margin: 0 auto;
+  max-width: 1200px;
+  display: flex;
+  padding: 30px 40px 30px 20px;
+  justify-content: space-around;
+}
+
+footer p br {
+  margin: 0; padding: 0;
+}
+
+footer img {
+  display: flex;
+  align-self: center;
+  margin: 5px 20px;
+  overflow: hidden;
+  height: 52px;
+}
+
+footer .shy {
+  width: 210px;
+}
 
 
 
@@ -383,6 +428,11 @@ section {
   .media.flipped
   {
     grid-template-columns: 3fr 2fr;
+  }
+
+  footer img {
+    margin: 7px 15px;
+    height: 45px;
   }
 }
 
@@ -438,7 +488,9 @@ section {
   }
   
   nav {
-    padding: 5px 0px 5px 15px;
+    padding: 5px 0px 5px 5px;
+    background-color: white;
+    justify-content: space-evenly;
   }
 
   .timeline-item::before {
@@ -500,4 +552,32 @@ section {
     margin: 0px;
   }
 
+  .card-container {
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  }
+
+  .footer-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .address {
+    order: 1;
+    padding-bottom: 10px;
+  }
+
+  .copyright {
+    order: 2;
+  }
+
+  footer img {
+    margin-top: 3px;
+    margin-left: 25px;
+  }
+
+  .shy {
+    width: 50%;
+  }
+
+  
 }

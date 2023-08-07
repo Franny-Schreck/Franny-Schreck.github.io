@@ -1,3 +1,13 @@
+(function(){
+    var burger = document.querySelector('.burger-container'),
+        header = document.querySelector('.header');
+    
+    burger.onclick = function() {
+        header.classList.toggle('menu-opened');
+    }
+}());
+
+
 import hyphenopoly from "hyphenopoly";
 
 // AOS library initialisation and duration setting
