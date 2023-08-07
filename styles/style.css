@@ -81,6 +81,7 @@ h1 {
 }
 
 h2.about {
+  margin-top: -10px;
   color: #ff7b34;
 }
 
@@ -491,6 +492,10 @@ footer .shy {
     padding: 5px 0px 5px 5px;
     background-color: white;
     justify-content: space-evenly;
+  }
+
+  #introduction {
+    margin-top: 0;
   }
 
   .timeline-item::before {
