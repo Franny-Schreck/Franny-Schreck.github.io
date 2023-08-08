@@ -432,8 +432,8 @@ footer .shy {
   }
 
   footer img {
-    margin: 7px 15px;
-    height: 45px;
+    margin: 6px 15px;
+    height: 37px;
   }
 }
 
@@ -584,5 +584,8 @@ footer .shy {
     width: 50%;
   }
 
+  h2.card {
+    margin-bottom: 10px;
+  }
   
 }
