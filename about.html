@@ -1,6 +1,6 @@
 <!doctype html>
 
-<html lang="en-US">
+<html lang="en-GB">
 
   <head>
     <meta charset="utf-8" />
@@ -14,7 +14,21 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
 
-    <script src="scripts/main.js" defer></script>
+    <script type="module" src="scripts/main.js" defer></script>
+    <script src="scripts/Hyphenopoly_Loader.js"></script>
+    <script>
+      Hyphenopoly.config({
+        require: {
+            "en-gb": "FORCEHYPHENOPOLY"
+        },
+        setup: {
+            selectors: {
+                ".container": {},
+                "body": {}
+            }
+        }
+      });
+    </script>
 
     <title>Fanny Schreck</title>
 

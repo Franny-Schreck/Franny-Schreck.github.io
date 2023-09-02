@@ -1,6 +1,6 @@
 <!doctype html>
 
-<html lang="en-US">
+<html lang="en-GB">
 
   <head>
     <meta charset="utf-8" />
@@ -9,9 +9,21 @@
     <meta name="description" content="This is my personal webpage, where I introduce myself and what I love to do!"/>
 
     
-    <script type="module" src="scripts/main.js" defer></script>
-
-    <script type="module" src="./Hyphenopoly_Loader.js"></script>
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/Hyphenopoly_Loader.js"></script>
+    <script>
+      Hyphenopoly.config({
+        require: {
+            "en-gb": "FORCEHYPHENOPOLY"
+        },
+        setup: {
+            selectors: {
+                ".container": {},
+                "body": {}
+            }
+        }
+      });
+    </script>
 
     
     <link href="styles/style.css" rel="stylesheet" />
