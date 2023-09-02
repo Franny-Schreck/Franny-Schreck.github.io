@@ -20,6 +20,11 @@ nav {
   z-index: 30;
 }
 
+.current-page {
+  text-decoration: underline 1.5px;
+  text-underline-offset: 7px;
+}
+
 nav ul {
   margin: 0;
   padding: 0;
@@ -182,6 +187,16 @@ img.profile {
   max-height: 350px;
   border-radius: 5px;
   overflow: hidden;
+}
+
+#about-card {
+  padding-left: 0px;
+  margin-left: 0px;
+}
+
+#about-img {
+  padding-right: 0px;
+  margin-left: 1%;
 }
 
 section {
@@ -359,6 +374,7 @@ section {
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   grid-gap: 30px;
   max-width: 1200px;
+  text-align: justify;
 }
 
 .cards {
@@ -435,6 +451,10 @@ footer .shy {
     margin: 6px 15px;
     height: 37px;
   }
+
+  #about-card {
+    padding-left: 0px;
+  }
 }
 
 @media only screen and (min-width: 900px) {
@@ -450,6 +470,14 @@ footer .shy {
 
   h2.card {
     margin: 0 0 0 310px;
+  }
+
+  #about-card {
+    padding-left: 0px;
+  }
+
+  footer img {
+    height: 52px;
   }
 }
   
@@ -468,6 +496,10 @@ footer .shy {
   header.exp {
     background: url(../images/swing.jpg) no-repeat 57% 43%;
     height: 570px;
+  }
+
+  .current-page {
+    text-decoration: underline 1px;
   }
 
   article {
@@ -553,6 +585,10 @@ footer .shy {
     margin-bottom: 30px;
   }
 
+  #about-card {
+    padding-left: 0px;
+  }
+
   img.profile {
     margin: 0px;
   }
@@ -576,7 +612,7 @@ footer .shy {
   }
 
   footer img {
-    margin-top: 3px;
+    margin-top: 1.5px;
     margin-left: 25px;
   }
 
