@@ -189,6 +189,10 @@ img.profile {
   overflow: hidden;
 }
 
+.about p {
+  font-size: 15px;
+}
+
 #about-card {
   padding-left: 0px;
   margin-left: 0px;
