@@ -9,6 +9,10 @@ html {
     -webkit-hyphens: auto;
   }
 
+a {
+  color: black;
+}
+
 nav {
   max-width: 1200px;
   margin: 0 auto;
