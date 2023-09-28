@@ -5,7 +5,7 @@
  * Instead it refers to the percentage of the screen that is below the
  * element's top edge.
  */
-const perc_threshold = 0.08;
+const perc_threshold = 0.07;
 
 /**
  * Calculates the percentage of the screen that is below the passed HTML
@@ -15,9 +15,9 @@ const perc_threshold = 0.08;
  * 
  * @param {Element} elem
  * @returns Percentage of the screen that is below elem's top edge, in an
- *          endpoint-inclusive range from 0 to 1
+ *          endpoint-inclusive range from 0 to 1 
  */
-const filled_perc = (elem) => {
+const filled_perc = elem => {
         // Account for vertical translation.
         const y_offset = new DOMMatrixReadOnly(window.getComputedStyle(elem).transform).m42;
 
@@ -33,16 +33,30 @@ const filled_perc = (elem) => {
  * 
  * @param {Element} elem
  */
-const handle_on_screen = (elem) => {
+const handle_on_screen = elem => {
         if (filled_perc(elem) > perc_threshold)
                 elem.classList.add('on-screen');
         else
                 elem.classList.remove('on-screen');
 };
 
-// Initialize on-screen class depending on the initial location of elements
-// when the page is loaded.
-document.querySelectorAll('.faded').forEach((elem) => handle_on_screen(elem));
-
-// Recalculate on-screen class on every scroll.
-document.addEventListener('scroll', (_) => document.querySelectorAll('.faded').forEach((elem) => handle_on_screen(elem)));
+// Check for prefers-reduced-motion css media query
+// (https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion).
+// In case it matches, set everything to on-screen and leave it at that.
+// Otherwise, initialize on-screen state and scroll handling.
+if (window.matchMedia('(prefers-reduced-motion)').matches)
+{
+        document.querySelectorAll('.faded').forEach(elem => elem.classList.add('on-screen'));
+}
+else
+{
+        // Initialize on-screen class depending on the initial location of elements
+        // when the page is loaded.
+        document.querySelectorAll('.faded').forEach(elem => handle_on_screen(elem));
+        
+        // Recalculate on-screen class on every scroll.
+        document.addEventListener('scroll', _ => document.querySelectorAll('.faded').forEach(elem => handle_on_screen(elem)));     
+        
+        // The same goes for window resizing
+        window.addEventListener('resize', _ => document.querySelectorAll('.faded').forEach(elem => handle_on_screen(elem))); 
+}
