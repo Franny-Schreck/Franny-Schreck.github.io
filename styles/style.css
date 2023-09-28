@@ -415,6 +415,21 @@ section {
   font-size: 14px;
 }
 
+.faded {
+  opacity: 0;
+  transform: translateY(20vh);
+  transition: opacity 0.5s ease-in-out, transform 0.7s ease-in-out;
+}
+.faded.on-screen {
+  opacity: 1;
+  transform: none;
+}
+.box {
+  height: 400px;
+  width: 200px;
+  margin: 10px;
+}
+
 /* Footer styling */
 
 footer {
@@ -430,8 +445,10 @@ footer {
   justify-content: space-around;
 }
 
+
 footer p br {
-  margin: 0; padding: 0;
+  margin: 0; 
+  padding: 0;
 }
 
 footer img {
