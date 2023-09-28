@@ -1,3 +1,5 @@
+// This Animate-on-scroll script was written by OchHerrje (https://github.com/AlexanderRipar/fade-on-scroll)
+
 /**
  * Percentage threshold above which an element is considered on-screen and
  * below which it is considered off-screen.
