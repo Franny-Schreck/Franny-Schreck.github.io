@@ -52,14 +52,14 @@ header {
 }
 
 header.home {
-  background-image: url(../images/bogen.jpg);
+  background-image: url(../images/headers/bogen.jpg);
   height: 600px;
   background-position: top;
   background-repeat: no-repeat;
 }
 
 header.about {
-  background: url(../images/big_talk.jpg);
+  background: url(../images/headers/big_talk.jpg);
   padding-top: 30px;
   background-position: top 30px left 50%;
   background-repeat: no-repeat;
@@ -67,7 +67,7 @@ header.about {
 }
 
 header.exp {
-  background: url(../images/swing.jpg);
+  background: url(../images/headers/swing.jpg);
   background-position: left 50% top 45px;
   background-size: auto;
   background-repeat: no-repeat;
@@ -75,7 +75,7 @@ header.exp {
 }
 
 header.projects {
-  background: url(../images/trees.jpg);
+  background: url(../images/headers/trees.jpg);
   background-position: left 50% top 45px;
   background-size: auto;
   background-repeat: no-repeat;
@@ -513,7 +513,7 @@ footer .shy {
 @media only screen and (max-width: 899px) {
 
   header.home {
-    background: url(../images/bogen.jpg) no-repeat 21% 40%;
+    background: url(../images/headers/bogen.jpg) no-repeat 21% 40%;
     height: 600px;
   }
 
@@ -523,7 +523,7 @@ footer .shy {
   }
 
   header.exp {
-    background: url(../images/swing.jpg) no-repeat 57% 43%;
+    background: url(../images/headers/swing.jpg) no-repeat 57% 43%;
     height: 570px;
   }
 
