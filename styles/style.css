@@ -514,16 +514,19 @@ footer .shy {
 
   header.home {
     background: url(../images/headers/bogen.jpg) no-repeat 21% 40%;
+    background-attachment: fixed;
     height: 600px;
   }
 
   header.about {
     background: url(../images/headers/big_talk.jpg) no-repeat 21% 40%;
+    background-attachment: fixed;
     height: 600px;
   }
 
   header.exp {
-    background: url(../images/headers/swing.jpg) no-repeat 57% 43%;
+    background: url(../images/headers/swing.jpg) no-repeat 53% 44%;
+    background-attachment: fixed;
     height: 570px;
   }
 
