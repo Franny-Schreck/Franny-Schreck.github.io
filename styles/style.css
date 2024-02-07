@@ -53,7 +53,7 @@ header {
 
 header.home {
   background-image: url(../images/headers/bogen.jpg);
-  height: 600px;
+  background-size: auto;
   background-position: top;
   background-repeat: no-repeat;
 }
@@ -61,6 +61,7 @@ header.home {
 header.about {
   background: url(../images/headers/big_talk.jpg);
   background-position: top 30px left 50%;
+  background-size: auto;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
@@ -512,19 +513,21 @@ footer .shy {
 @media only screen and (max-width: 899px) {
 
   header.home {
-    background: url(../images/headers/bogen.jpg) no-repeat 21% 40%;
+    background: url(../images/headers/bogen.jpg) no-repeat 21% 0%;
     background-attachment: fixed;
     height: 600px;
   }
 
   header.about {
-    background: url(../images/headers/big_talk.jpg) no-repeat 21% 40%;
+    background: url(../images/headers/big_talk.jpg) no-repeat 21% 0%;
     background-attachment: fixed;
     height: 600px;
+
+    
   }
 
   header.exp {
-    background: url(../images/headers/swing.jpg) no-repeat 53% 44%;
+    background: url(../images/headers/swing.jpg) no-repeat 52% 0%;
     background-attachment: fixed;
     height: 570px;
   }
