@@ -60,7 +60,6 @@ header.home {
 
 header.about {
   background: url(../images/headers/big_talk.jpg);
-  padding-top: 30px;
   background-position: top 30px left 50%;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -68,7 +67,7 @@ header.about {
 
 header.exp {
   background: url(../images/headers/swing.jpg);
-  background-position: left 50% top 45px;
+  background-position: left 50% top 50px;
   background-size: auto;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -76,7 +75,7 @@ header.exp {
 
 header.projects {
   background: url(../images/headers/trees.jpg);
-  background-position: left 50% top 45px;
+  background-position: left 50% top 50px;
   background-size: auto;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -530,6 +529,13 @@ footer .shy {
     height: 570px;
   }
 
+  header.projects {
+    background: url(../images/headers/trees.jpg) no-repeat;
+    background-attachment: fixed;
+    height: 570px;
+    
+  background-position: top;
+  }
   .current-page {
     text-decoration: underline 1px;
   }
