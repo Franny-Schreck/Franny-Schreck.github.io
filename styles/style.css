@@ -274,6 +274,20 @@ article.exp {
   background-color: #ddddf6;
 }
 
+article.blog { 
+  background-color: #EFE4F1;
+}
+
+h2.blogheading {
+  text-align: left; 
+  margin: 0px 10px;
+}
+
+p.blogp {
+  margin-left: 10px;
+  margin-bottom: 0px;
+}
+
 .exp + h2 {
   color: #3e4570;
 }
@@ -716,8 +730,15 @@ footer .shy {
     line-height: 1.5;
     letter-spacing: 1px;
   }
-  
 
+  h2.blogheading {
+    margin: 0px;
+  }
+
+  p.blogp {
+    margin-left: 0px;
+  }
+  
   #introduction {
     margin-top: 0;
   }
