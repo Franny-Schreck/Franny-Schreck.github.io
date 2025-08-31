@@ -48,8 +48,6 @@
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
-
-  
     <title>Fanny Schreck</title>
 
   </head>
@@ -57,10 +55,21 @@
   <body>
 
     <div class="wrapper">
-    
+
+    <!-- Mobile menu overlay -->
+    <div class="mobile-menu" id="mobileMenu">
+      <button class="close-menu" id="closeMenu" aria-label="Close navigation menu">&times;</button>
+      <ul>
+        <li class="current-page">&nbsp;Home&nbsp;</li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="projects.html">Projects</a></li>
+      </ul>
+    </div>
     
     <nav class="nav">
 
+      <!-- Desktop menu -->
       <ul class="menu">
         <li class="current-page">&nbsp;Home&nbsp;</li>
         <li><a href="about.html">About</a></li>
@@ -68,9 +77,14 @@
         <li><a href="projects.html">Projects</a></li>
       </ul>
 
-    </nav>
-    
+      <!-- Burger menu button -->
+      <button class="burger-menu" id="burgerMenu" aria-label="Toggle navigation menu">
+        <div class="burger-line"></div>
+        <div class="burger-line"></div>
+        <div class="burger-line"></div>
+      </button>
 
+    </nav>
     
 
     <header class="home">
@@ -145,6 +159,70 @@
 
   </div>
   </footer>
+
+  <script>
+    // Burger menu functionality
+    const burgerMenu = document.getElementById('burgerMenu');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const closeMenu = document.getElementById('closeMenu');
+
+    function openMobileMenu() {
+      burgerMenu.classList.add('active');
+      mobileMenu.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeMobileMenu() {
+      burgerMenu.classList.remove('active');
+      mobileMenu.classList.remove('active');
+      document.body.style.overflow = 'auto';
+    }
+
+    if (burgerMenu && mobileMenu && closeMenu) {
+      burgerMenu.addEventListener('click', function() {
+        if (mobileMenu.classList.contains('active')) {
+          closeMobileMenu();
+        } else {
+          openMobileMenu();
+        }
+      });
+
+      // Close menu when clicking the X button
+      closeMenu.addEventListener('click', closeMobileMenu);
+
+      // Close menu when clicking on a link
+      const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+      mobileMenuLinks.forEach(link => {
+        link.addEventListener('click', closeMobileMenu);
+      });
+
+      // Close menu when clicking outside of it
+      mobileMenu.addEventListener('click', function(e) {
+        if (e.target === mobileMenu) {
+          closeMobileMenu();
+        }
+      });
+    }
+
+    // Fade in animation (if you have this functionality)
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver(function(entries) {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('on-screen');
+        }
+      });
+    }, observerOptions);
+
+    // Observe all elements with faded class
+    document.querySelectorAll('.faded').forEach(el => {
+      observer.observe(el);
+    });
+  </script>
 
   </body>
 
