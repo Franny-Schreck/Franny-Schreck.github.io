@@ -532,8 +532,7 @@ section {
   overflow: hidden;
   border-radius: 10px 10px 0px 0px;
   object-fit: cover;
-  max-width: 100%;
-  width: auto;
+  width: 99.99%;
   height: auto;
 }
 
