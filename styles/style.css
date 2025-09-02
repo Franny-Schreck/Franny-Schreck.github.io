@@ -529,9 +529,9 @@ section {
 }
 
 .cards img {
-  overflow: hidden;
   border-radius: 10px 10px 0px 0px;
   object-fit: cover;
+  max-width: 99.99%;
   width: 99.99%;
   height: auto;
 }
