@@ -722,7 +722,8 @@ footer .shy {
   }
 
   img.profile {
-    max-width: 200px;
+    margin: 0px;
+    max-height: 250px;
   }
 
   p {
@@ -802,10 +803,6 @@ footer .shy {
     padding-left: 0px;
   }
 
-  img.profile {
-    margin: 0px;
-  }
-
   .card-container {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   }
@@ -837,4 +834,13 @@ footer .shy {
     margin-bottom: 10px;
   }
   
+}
+
+  
+@media only screen and (max-width: 330px) {
+
+  img.profile {
+    max-height: 200px;
+  }
+
 }
