@@ -596,6 +596,14 @@ footer .shy {
   width: 210px;
 }
 
+details > summary {
+  cursor: pointer;
+  text-align: left; 
+  font-weight: bold; 
+  font-size: x-large;
+  text-decoration: none;
+}
+
 
 
 
