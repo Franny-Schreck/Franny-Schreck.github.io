@@ -604,7 +604,9 @@ details > summary {
   text-decoration: none;
 }
 
-
+.blog-text {
+  text-align: justify;
+}
 
 
 @media only screen and (max-width: 1000px) {
